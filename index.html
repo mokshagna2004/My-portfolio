@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="greybackground.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="gm logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <i class="fas fa-times" id="close-menu"></i> <!-- Cross Icon Inside Menu -->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">My Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars" id="open-menu"></i> <!-- Menu Bar Icon -->
+        </nav>
+        
+        
+        <div class="header-text">
+            <p>WELCOME to My Portfolio.</p>
+            <h1>Hi, I'm <span>Gadupudi Mokshagna</span><br> 
+                <span class="small-text">A Tech Enthusiast</span>
+            </h1>
+        </div>
+        
+    </div>
+</div>
+
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A highly motivated and enthusiastic CSE (AI & ML) student, eager to apply my skills and gain hands-on experience. Passionate about learning and contributing to innovative projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Certifications">
+                        <ul>
+                            <li><span>NPTEL</span><br>The Joy of Computing with Python (Elite)</li>
+                            <li><span>Salesforce</span><br>Salesforce Certified AI Associate</li>
+                            <li><span>CISCO Networking Academy</span><br>Python Essentials</li>
+                            <li><span>IBM Skill Build</span><br>Artificial Intelligence Fundamentals</li>
+                            <li><span>Google Cloud</span><br>Google Cloud Computing Foundations</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>B.Tech in CSE (AI & ML) - Pragati Engineering College, Kakinada</li>
+                            <li><span>2022</span><br>Intermediate - Sri Sairam Junior College, Ongole</li>
+                            <li><span>2020</span><br>10th Board - Montessori High School, Ongole</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fas fa-robot"></i>
+                    <h2>Explore India Chatbot</h2>
+                    <p>A chatbot built using IBM Watson Assistant that helps users find the best tourist spots in India and assists with travel bookings.</p>
+                    <a href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-2684c853-4b58-4c01-9ffb-063688c4a13c%3A%3A309290f3-522b-4364-94cd-eef849244a1d&integrationID=dd8805df-8f29-4b68-ab2c-c41c81fe7467&region=au-syd&serviceInstanceID=2684c853-4b58-4c01-9ffb-063688c4a13c" target="_blank">View here</a>
+                </div>
+                <div>
+                    <i class="fas fa-book"></i>
+                    <h2>LibNotify</h2>
+                    <p>A system that tracks book borrowing and sends reminders to users to return books on time.</p>
+                    <a href="https://github.com/mokshagna2004/LibNotify" target="_blank">View here</a>
+                </div>
+                <div>
+                    <i class="fas fa-chart-bar"></i>
+                    <h2>Book Ratings Analysis</h2>
+                    <p>An in-depth analysis of book ratings to uncover trends, identify the highest-rated books, and recognize the most popular authors.</p>
+                    <a href="https://github.com/mokshagna2004/Book-Ratings-Analysis" target="_blank">View here</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- My Skills -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skill">
+                    <img src="python-original.svg" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <img src="javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <img src="html5-original.svg" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="css3-original.svg" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="mysql-original.svg" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+                <div class="skill">
+                    <img src="pandas-original.svg" alt="Pandas">
+                    <span>Pandas</span>
+                </div>
+                <div class="skill">
+                    <img src="numpy-original.svg" alt="NumPy">
+                    <span>NumPy</span>
+                </div>
+                <div class="skill">
+                    <img src="matplotlib-original.svg" alt="Matplotlib">
+                    <span>Matplotlib</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contact Me -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> mokshagnagd04@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 7386912156</p>
+                    <a href="https://drive.google.com/file/d/1USbMJrSr2GlL1sOyBUIGSCPIjISZRgIp/view?usp=drivesdk" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/mokshagnagd04@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        
+                        <!-- Hidden Fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="Thank you for contacting me!">
+                        
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mokshagna-gadupudi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mokshagna2004" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/mokshagna04/" target="_blank"><i class="fas fa-code"></i></a>
+            <a href="https://www.hackerrank.com/profile/22A31A4270" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        </div>
+        
+    </div>
+    <p>Thank you for visiting my portfolio!</p>
+</footer>
+
+<script>
+    // Function to open and close the menu
+    function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
+    }
+
+    function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+    }
+
+    // Attach event listeners after the DOM is loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("open-menu").addEventListener("click", openmenu);
+        document.getElementById("close-menu").addEventListener("click", closemenu);
+
+        // Close the menu when clicking on a menu item
+        document.querySelectorAll("#sidemenu li a").forEach(item => {
+            item.addEventListener("click", closemenu);
+        });
+
+        // Function to switch tabs in the About Me section
+        document.querySelectorAll(".tab-links").forEach(link => {
+            link.addEventListener("click", function () {
+                document.querySelectorAll(".tab-links").forEach(link => link.classList.remove("active-link"));
+                document.querySelectorAll(".tab-contents").forEach(content => content.classList.remove("active-tab"));
+
+                this.classList.add("active-link");
+                document.getElementById(this.getAttribute("onclick").replace("opentab('", "").replace("')", "")).classList.add("active-tab");
+            });
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
